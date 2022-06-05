@@ -5,9 +5,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    
     line-height: 1.5;
-
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
@@ -155,63 +154,9 @@ body {
     text-align: justify;
 }
 
-.skills__header {
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.skills__text {
-    color: var(--secondary-text-color);
-    text-align: justify;
-}
 .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
-}
-
-.experiences__header {
-    color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.experiences__company-header-durability {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-header-name {
-    color: var(--primary-text-color);
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-.experiences__company-project-role {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-project-name {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
-    padding-left: 20px;
 }
 
 .additional-info {
@@ -257,4 +202,33 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.drop-list-checkbox {
+    display: none !important;
+}
+
+.dropdown-content {
+    margin-top: 0.8rem;
+    padding: 0 0.8rem;
+    margin-bottom: 0.8rem;
+}
+  
+.summary {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding: 0.75rem !important;
+    width: 100% !important;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px #f8b04481;
+    border-radius: 10px;
+}
+  
+.drop-list-checkbox:checked + .summary {
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.dropdown-section {
+    padding: 0;
 }
