@@ -12,8 +12,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #cc00ff45;
+    --text-decoration-color: #cc00ff45;
 }
 
 .container {
@@ -124,9 +124,9 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 120px;
+    height: 130px;
+    object-fit: contain;
     border: 3px solid;
     border-color: var(--text-decoration-color);
 }
@@ -260,4 +260,33 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.drop-list-checkbox {
+    display: none !important;
+}
+
+.dropdown-content {
+    margin-top: 0.8rem;
+    padding: 0 0.8rem;
+    margin-bottom: 0.8rem;
+}
+  
+.summary {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding: 0.75rem !important;
+    width: 100% !important;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px #cc00ff45;
+    border-radius: 10px;
+}
+  
+.drop-list-checkbox:checked + .summary {
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.dropdown-section {
+    padding: 0;
 }
